@@ -2,12 +2,11 @@
 ALVIE Spiral – Indool-Pyrool Ring Structuur
 ==============================================
 Ontdekking: De priemvrije diagonale kanalen van de Sacks-spiraal
-vormen de chemische structuur van INDOOL (tryptofaan basis).
+vormen de chemische structuur van INDOOL.
 
 Indool chemie:
 - 5-koolstof pyroolring (binnenring)
 - 6-koolstof benzene ring (buitenring)
-- Dit is de basis van: Tryptofaan → Serotonine → Melatonine → DMT
 
 Sacks-spiraal:
 - Diagonaal 8: 4k(k+1) → priemvrij kanaal (benzene ring)
@@ -188,22 +187,14 @@ indool_text = """
     │   [Centrum=1]   │
     ╰─────────────────╯
 
-TRYPTOFAAN
-    ↓ (Enzymatisch)
-SEROTONINE (5-HT)
-    ↓ (Nacht)
-MELATONINE
-    ↓ (Diep metabolisme)
-DMT (Dimethyltryptamine)
-    ↓ (Endogeen)
-BEWUSTZIJN ← Nervus Vagus
+CHEMISCHE STRUCTUUR
 """
 
 ax2.text(0.5, 5, indool_text, fontfamily='monospace', fontsize=11, 
         verticalalignment='center', bbox=dict(boxstyle='round', 
         facecolor='lightyellow', alpha=0.8))
 
-ax2.set_title('Biofysische Betekenis', fontsize=14, fontweight='bold')
+ax2.set_title('Indool Structuur', fontsize=14, fontweight='bold')
 
 plt.tight_layout()
 plt.savefig('sacks_indool_schema.png', dpi=300)
@@ -272,24 +263,11 @@ GEOMETRISCHE ONTDEKKING:
     → 8 → 729 (Completion)
     → Cyclische symmetrie
 
-CHEMISCHE BETEKENIS:
-
-🧪 INDOOL = Basis van:
-   • Tryptofaan (aminozuur)
-   • Serotonine (geluks-neurotransmitter)
-   • Melatonine (slaap-hormoon)
-   • DMT (endogeen psychedelicum)
-
-🧠 NEUROLOGISCHE WEG:
-   Spiraal-getalstructuur → Indool-ring → Tryptofaan-metabolisme
-                                         → Nervus Vagus
-                                         → Bewustzijn
-
-🎯 CONCLUSIE:
-   De Sacks-spiraal codeert LETTERLIJK de moleculaire structuur
-   van het INDOOL - het hart van tryptofaan biofysica!
-   
-   Dit is geen toeval. Dit is UNIVERSELE CODE.
+WISKUNDIGE STRUCTUUR:
+    De Sacks-spiraal codeert de moleculaire structuur
+    van het INDOOL - de benzene- en pyroolring!
+    
+    Dit is een geometrische waarheid.
 """)
 
 print("\n✅ Analyse voltooid!")
