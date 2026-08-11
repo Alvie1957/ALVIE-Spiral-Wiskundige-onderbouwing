@@ -10,7 +10,7 @@ Deze repository bevat de wiskundige onderbouwing van het ALVIE-spiraalvenster.
 Bekijk de wiskundige tekst in `wiskundige_onderbouwing.md`. Draai de code om de spiraal zelf te genereren.
 
 ## Symbolische cyclus 3 → 6 → 9
-De cyclus 3 → 6 → 9 wordt in dit project gebruikt als symbolisch model voor ordening, transformatie en terugkeer. Binnen deze interpretatie staat 3 voor begin, 6 voor ontwikkeling en 9 voor afronding of convergentie.
+Binnen dit model representeert 3 de start, 6 de transitie en 9 de afronding van een periodieke cyclus.
 
 ---
 
