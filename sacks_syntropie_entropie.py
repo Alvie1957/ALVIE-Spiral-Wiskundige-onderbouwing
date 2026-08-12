@@ -31,7 +31,7 @@ def sieve_of_eratosthenes(n):
             is_prime[i*i:n+1:i] = False
     return np.where(is_prime)[0]
 
-def sacks_coord(n, golden_angle_rad=137.5 * pi / 180):
+def sacks_coord(n, golden_angle_rad=137.50776405 * pi / 180):
     """Sacks-spiraal coördinaten"""
     hoek = n * golden_angle_rad
     straal = sqrt(n)
@@ -82,7 +82,7 @@ primes_set = set(primes)
 data = []
 for n in range(1, N+1):
     x, y = sacks_coord(n)
-    hoek = (n * 137.5) % 360
+    hoek = (n * 137.50776405) % 360
     dr = digital_root(n)
     is_prime = n in primes_set
     is_369 = dr in [3, 6, 9]
@@ -295,12 +295,7 @@ ax1.scatter(primes_369_df['x'], primes_369_df['y'], s=4, color='red', alpha=0.8,
 # Priemgetallen niet op 3-6-9
 ax1.scatter(priems_not369['x'], priems_not369['y'], s=2, color='orange', alpha=0.4, label='Priemen niet op 3-6-9')
 
-# Teken driehoek
-triangle_x = [0, 500, 250, 0]
-triangle_y = [0, 0, 433, 0]
-ax1.plot(triangle_x, triangle_y, 'k-', linewidth=2, alpha=0.3)
-
-ax1.set_title('Sacks-Spiraal: Priemgetallen rond 3-6-9 Driehoek')
+ax1.set_title('Sacks-Spiraal: Priemgetallen rond 3-6-9 zones')
 ax1.set_xlabel('X')
 ax1.set_ylabel('Y')
 ax1.legend(loc='upper right', markerscale=3)

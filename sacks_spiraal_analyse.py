@@ -1,7 +1,7 @@
 """
 ALVIE Spiral – Statistische Hypothese Analyse
 =============================================
-Dit script test de hypothesen van de ALVIE spiral:
+Dit script analyseert priemgetalclustering in de Sacks-spiraal:
 1. Clusteren priemgetallen in bepaalde spiraalzones?
 2. Markeren 3-6-9 getallen tweelingpriemcentra?
 3. Is er een gouden-ratio relatie?
@@ -30,7 +30,7 @@ def sieve_of_eratosthenes(n):
 # 2. SACKS-SPIRAAL COÖRDINATEN
 # ============================================================================
 
-def sacks_coord(n, golden_angle_rad=137.5 * pi / 180):
+def sacks_coord(n, golden_angle_rad=137.50776405 * pi / 180):
     """Bereken Sacks-spiraal coördinaten voor getal n"""
     hoek = n * golden_angle_rad
     straal = sqrt(n)
@@ -71,7 +71,7 @@ for n in range(1, N+1):
         'x': x,
         'y': y,
         'straal': sqrt(n),
-        'hoek_deg': (n * 137.5) % 360,
+        'hoek_deg': (n * 137.50776405) % 360,
         'digital_root': dr,
         'is_prime': is_prime,
         'is_twin_prime': is_twin_prime,
@@ -152,8 +152,9 @@ if len(twin_primes_df) > 0:
         print(f"  ❌ NIET bevonden: Centers zijn uniform over alle DR's")
     
     # Binomiale test
-    from scipy.stats import binom_test
-    p_binom = binom_test(dr_369_count, len(centers), 3/9, alternative='greater')
+    from scipy.stats import binomtest
+    result = binomtest(dr_369_count, len(centers), 3/9, alternative='greater')
+    p_binom = result.pvalue
     print(f"  Binomiale test p-waarde: {p_binom:.6f}")
 else:
     dr_369_pct = 0
@@ -163,7 +164,7 @@ else:
 # ============================================================================
 
 print("\n" + "=" * 70)
-print("HYPOTHESE 3: Gouden Ratio als afstandsmarker (H1)")
+print("HYPOTHESE 3: Gouden Ratio als afstandsmarker")
 print("=" * 70)
 
 phi = (1 + sqrt(5)) / 2

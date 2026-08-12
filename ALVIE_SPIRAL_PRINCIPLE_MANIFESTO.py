@@ -77,13 +77,13 @@ the spiral in recognizable patterns.
 Twin primes (p, p+2) always have a center at 6k for integer k.
 
 Example:
-    (3,5): center = 4 = 6(2/3) [special case]
+    (3,5): center = 4 = 6(2/3) [special case, excluded]
     (5,7): center = 6 = 6(1)
     (11,13): center = 12 = 6(2)
     (17,19): center = 18 = 6(3)
 
-The center point represents a structural focus.
-The primes surround this organizing point.
+For all twin prime pairs (p, p+2) with p > 3, the center p+1
+is always divisible by 6. (The pair (3,5) is the only exception.)
 
 This is not coincidence—it reflects STRUCTURAL ORGANIZATION.
 
@@ -91,7 +91,7 @@ This is not coincidence—it reflects STRUCTURAL ORGANIZATION.
 1.4 PRESSURE FIELD CONCEPT
 ───────────────────────────
 
-In the spiral representation, THE 1 sits at the center surrounded by:
+In the spiral representation, THE 1 sits near the origin surrounded by:
 - The 3-6-9 structure pattern (organizing framework)
 - The 200,000+ integers surrounding it (density)
 - The prime number clustering pattern (stress distribution)
@@ -115,32 +115,7 @@ Analysis of the Sacks spiral shows:
 This is a pure mathematical observation, verified by computation.
 
 
-2.2 INDOLE RING GEOMETRY (GEOMETRIC OBSERVATION)
-─────────────────────────────────────────────────
-
-Indole (C₈H₇N) is a bicyclic aromatic molecule composed of:
-- Benzene ring (6-membered): regular hexagon, 120° angles
-- Pyrrole ring (5-membered): regular pentagon, 108° angles
-- These rings share one chemical bond (fusion)
-
-In the Sacks spiral we can identify:
-- Diagonal 8: 4k(k+1) [a prime-free channel]
-- Center 1: the Monad
-
-These form visually interesting patterns in the spiral plot.
-
-GEOMETRIC OBSERVATION (not chemical equivalence):
-The visual appearance of these spiral structures bears 
-a fascinating resemblance to indole's ring geometry.
-
-NOTE: This is a visual parallel and geometric metaphor only.
-The mathematical structure of the spiral does not literally 
-encode indole's chemical structure. No formal proof exists 
-that bond angles (120°, 108°) or distances match between 
-the spiral construction and actual molecular geometry.
-
-
-2.3 THE ALPHA-OMEGA SYMMETRY
+2.2 THE ALPHA-OMEGA SYMMETRY
 ─────────────────────────────
 
 In the spiral:
